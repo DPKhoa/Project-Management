@@ -58,7 +58,7 @@ export class UsersService {
     if (!user) {
       throw new NotFoundException(`User with id ${id} not found.`);
     }
-
+    console.log('proc', process.env.HOST)
     // Update user properties
     Object.assign(user, updateUserDto);
 

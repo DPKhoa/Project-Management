@@ -18,7 +18,7 @@ import { StudentsService } from './students/students.service';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 3306,
+      port: Number(process.env.HOST),
       username: 'root',
       password: 'root',
       database: 'dbnest',
